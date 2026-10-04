@@ -14,35 +14,38 @@
     </header>
 
     <main>
-      <section id="missions">
-    <h2>NASA Missions</h2>
-          <div class="filters">
-    <button onclick="filterMissions('all')">All Missions</button>
-    <button onclick="filterMissions('active')">Active</button>
-    <button onclick="filterMissions('upcoming')">Upcoming</button>
-</div>
+        <section id="missions">
+            <h2>NASA Missions</h2>
 
-    <div class="mission-card">
-        <h3>Artemis II</h3>
-        <p><strong>Destination:</strong> Moon</p>
-        <p><strong>Status:</strong> Upcoming</p>
-        <p><strong>Purpose:</strong> A crewed mission around the Moon.</p>
-    </div>
+            <div class="filters">
+                <button onclick="filterMissions('all')">All Missions</button>
+                <button onclick="filterMissions('active')">Active</button>
+                <button onclick="filterMissions('upcoming')">Upcoming</button>
+            </div>
 
-    <div class="mission-card">
-        <h3>Perseverance Rover</h3>
-        <p><strong>Destination:</strong> Mars</p>
-        <p><strong>Status:</strong> Active</p>
-        <p><strong>Purpose:</strong> Exploring Mars and searching for signs of ancient microbial life.</p>
-    </div>
+            <div class="mission-card" data-status="upcoming">
+                <h3>Artemis II</h3>
+                <p><strong>Destination:</strong> Moon</p>
+                <p><strong>Status:</strong> Upcoming</p>
+                <p><strong>Purpose:</strong> A crewed mission around the Moon.</p>
+            </div>
 
-    <div class="mission-card">
-        <h3>James Webb Space Telescope</h3>
-        <p><strong>Destination:</strong> Space</p>
-        <p><strong>Status:</strong> Active</p>
-        <p><strong>Purpose:</strong> Observing distant galaxies, stars, and planets.</p>
-    </div>
-</section>
+            <div class="mission-card" data-status="active">
+                <h3>Perseverance Rover</h3>
+                <p><strong>Destination:</strong> Mars</p>
+                <p><strong>Status:</strong> Active</p>
+                <p><strong>Purpose:</strong> Exploring Mars and searching for signs of ancient microbial life.</p>
+            </div>
+
+            <div class="mission-card" data-status="active">
+                <h3>James Webb Space Telescope</h3>
+                <p><strong>Destination:</strong> Space</p>
+                <p><strong>Status:</strong> Active</p>
+                <p><strong>Purpose:</strong> Observing distant galaxies, stars, and planets.</p>
+            </div>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
